@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #888;
+            }
+            table{
+                height: 400px;
+                width: 500px;
+                margin: auto;
+                margin-top: 100px;
+            }
+            table tr th{
+                font-weight: bold;
+                color: black;
+                text-align: center;
+                height: 100px;
+                width: 100px;
+                font-size: 4rem;
+            }
+            table tr th{
+                border: 3px solid #000;
+            }
+            table tr:first-child th{
+                border-top: 0;           
+             }
+             table tr:nth-child(3) th{
+                 border-bottom:0;
+             }
+             table tr th:first-child{
+                 border-left:0;
+             }
+             table tr th:nth-child(3){
+                 border-right:0;
+             }
+             .container h1{
+                background: #333;
+                margin-top: 20px;
+            }
+            /*TIMER*/
+                #seconds, #tens{
+                font-size:2em;
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            }
+            .timer{
+                TEXT-ALIGN: CENTER;
+                BACKGROUND: YELLOW;
+                WIDTH: 100PX;
+                MARGIN: AUTO;
+                MARGIN-TOP: 50PX;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+                <h1 class="text-danger text-center" >TI<span>k</span> <span class="text-primary">T<span>a</span>K </span><span>t</span>OE</h1>
+                <div class="alertDiv alert text-center text-capitalize">
+
+                </div>
+                <div class="row justify-content-center mt-5">
+                   
+                    <div class="col-md-4 text-center">
+                        <div class="btn btn-success btn-block" id="start">PLAY</div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div id="btnReset" class="btn btn-danger btn-lg">RESET</div>
+                    </div>
+                </div>
+                <p class="timer"><span id="seconds" class="text-center">00</span>:<span id="tens">00</span></p>
+                <table class="">
+                <tr>
+                    <th class="cell" id="0"></th>
+                    <th class="cell" id="1"></th>
+                    <th class="cell" id="2"></th>
+                </tr>
+                <tr>
+                    <th class="cell" id="3"></th>
+                    <th class="cell" id="4"></th>
+                    <th class="cell" id="5"></th>
+                </tr>
+                <tr>
+                    <th class="cell" id="6"></th>
+                    <th class="cell" id="7"></th>
+                    <th class="cell" id="8"></th>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script src='app.js'></script>
+</html>
